@@ -8,14 +8,14 @@ var questions = [
         {text:"The one who tries to correct the DM on minor rules infractions.", modifiers:[0,0,-1,0,0]},
         {text:"The one who spends forever trying to figure out what to do on their turn.", modifiers:[0,1,2,0,0]},
         {text:"The one who doesn't even try to roleplay their character.", modifiers:[0,0,0,0,2]},
-        {text:"The one who regularly exploits and harms innocent NPCs.", modifiers:[-1,0,0,0,0]}
+        {text:"The one who regularly exploits and harms innocent NPCs.", modifiers:[-1,0,0,1,0]}
     ]},
     {name:"It's time to roll initiative. What immediately goes through your mind (In general)?", answers:[
         // I C R S A
         {text:"YEAH BABY LET'S GOOOO", modifiers:[0,2,0,0,-1]},
         {text:"Oh great, another combat encounter.", modifiers:[0,-2,-1,0,0]},
         {text:"This was my fault, wasn't it?", modifiers:[1,0,0,0,0]},
-        {text:"Wait, hold on, we can talk about this!", modifiers:[-1,0,0,1,2]}
+        {text:"Wait, hold on, we can talk about this!", modifiers:[-1,0,0,1,1]}
     ]},
     {name:"You prefer a dungeon master who will...", answers:[
         // I C R S A
@@ -27,9 +27,9 @@ var questions = [
     {name:"You would have the most fun playing a...", answers:[
         // I C R S A
         {text:"Chaotic neutral edgy rogue boi", modifiers:[2,0,0,0,0]},
-        {text:"Chaotic stupid barbarian smashy boi", modifiers:[1,2,0,0,0]},
-        {text:"Chaotic good bard with a penchant for seduction.", modifiers:[1,0,0,0,2]},
-        {text:"Lawful evil knight of the realm, slayer of my foes by any means necessary.", modifiers:[0,1,0,1,1]}
+        {text:"Chaotic stupid barbarian smashy boi", modifiers:[1,2,0,-1,0]},
+        {text:"Chaotic good bard with a penchant for seduction.", modifiers:[1,0,0,0,1]},
+        {text:"Lawful evil knight of the realm, slayer of my foes by any means necessary.", modifiers:[0,1,0,1,0]}
     ]},
     {name:"When your dungeon master intentionally breaks the rules of the game, how do you feel?", answers:[
         // I C R S A
@@ -73,7 +73,7 @@ var questions = [
         {text:"A couple minutes. Backstory isn't all that important to me.", modifiers:[0,0,0,-2,0]},
         {text:"A day or two.", modifiers:[0,0,0,0,0]},
         {text:"Several days, potentially a week or two, if I'm feeling really inspired.", modifiers:[0,0,0,1,0]},
-        {text:"I can't wait for the DM to read the novel I wrote!", modifiers:[0,0,0,2,0]}
+        {text:"I can't wait for the DM to read the novel I wrote!", modifiers:[0,0,0,3,0]}
     ]},
     {name:"Out of each of these skills, which ones would you prefer to be proficient in?", answers:[
         // I C R S A
@@ -94,7 +94,7 @@ var questions = [
         {text:"Is there a way we can resolve this with words instead of weapons?", modifiers:[0,-1,0,0,2]},
         {text:"What's the most amount of damage I can possibly deal in one turn?", modifiers:[0,2,1,0,0]},
         {text:"Can't wait to loot the bodies!", modifiers:[2,0,0,0,0]},
-        {text:"How will the aftermath of this battle affect my character's story?", modifiers:[0,0,-1,2,0]},
+        {text:"How will the aftermath of this battle affect my character's story?", modifiers:[0,0,0,2,0]},
         {text:"I have no idea what's going on.", modifiers:[0,0,-2,0,0]},
     ]},
     {name:"What's your opinion on evil characters in your party?", answers:[
@@ -110,6 +110,13 @@ var questions = [
         {text:"The tavern.", modifiers:[1,0,0,0,1]},
         {text:"The magic shop.", modifiers:[0,1,2,0,0]},
         {text:"The smithy.", modifiers:[0,2,0,0,0]},
+    ]},
+    {name:"How often do you prefer combat sessions to roleplay-only sessions?", answers:[
+        // I C R S A
+        {text:"Ideally, I prefer to engage in at least some combat each session.", modifiers:[0,2,0,0,0]},
+        {text:"Every other session is ideal.", modifiers:[0,1,0,0,0]},
+        {text:"I don't mind when the party doesn't experience combat for a few sessions in a row.", modifiers:[0,0,0,1,1]},
+        {text:"I'd be just fine if every session was roleplay-only.", modifiers:[0,-1,0,1,2]},
     ]},
     {name:"To you, D&D is a...", answers:[
         // I C R S A
