@@ -35,7 +35,7 @@ var questions = [
         // I C R S A
         {text:"Completely indifferent.", modifiers:[0,0,-1,0,0]},
         {text:"It's fine, as long as it doesn't negatively affect my character.", modifiers:[0,0,0,0,0]},
-        {text:"Suspending the rules is only okay if it allows for a cool moment.", modifiers:[0,0,1,1,0]},
+        {text:"Suspending the rules is only okay if it allows for a cool moment.", modifiers:[0,0,1,1,1]},
         {text:"Rules are rules, they exist for a reason.", modifiers:[0,0,2,0,0]}
     ]},
     {name:"How often are you in character, during a D&D session?", answers:[
@@ -57,13 +57,12 @@ var questions = [
         // I C R S A
         {text:"I hate it. I want to feel like the story is in my hands.", modifiers:[1,0,0,2,0]},
         {text:"It's a necessary evil, sometimes, but I don't particularly like it.", modifiers:[1,0,0,1,0]},
-        {text:"Don't mind it, as long as I'm still afforded plenty of freedom with my character.", modifiers:[1,0,0,1,1]},
+        {text:"Don't mind it, as long as I'm still afforded plenty of freedom with my character.", modifiers:[1,0,0,1,0]},
         {text:"Don't care, as long as I get to fight things.", modifiers:[0,2,0,0,0]},
         {text:"I actually like it (I don't like making decisions)", modifiers:[0,0,0,-1,-1]}
     ]},
     {name:"Your DM tells you that you can't use a homebrew race because it's too OP (you disagree). How do you respond?", answers:[
         // I C R S A
-        {text:"REEEEEEE", modifiers:[1,0,1,0,0]},
         {text:"Comply with the DM, but I'd feel a little bit upset.", modifiers:[0,1,0,0,0]},
         {text:"Try to work something out with the DM, to make it less OP.", modifiers:[0,1,1,0,0]},
         {text:"Very well, the almighty DM has spoken. I respect his judgement (gigachad response)", modifiers:[0,0,0,1,0]},
@@ -77,7 +76,7 @@ var questions = [
     ]},
     {name:"Out of each of these skills, which ones would you prefer to be proficient in?", answers:[
         // I C R S A
-        {text:"History or Religion.", modifiers:[0,0,0,2,1]},
+        {text:"History or Religion.", modifiers:[0,0,0,1,0]},
         {text:"Athletics or Acrobatics.", modifiers:[0,2,0,0,0]},
         {text:"Deception or Persuasion.", modifiers:[0,0,0,0,2]},
         {text:"Sleight of Hand or Stealth.", modifiers:[1,0,0,0,0]}
@@ -91,7 +90,7 @@ var questions = [
     ]},
     {name:"In combat, what's your state of mind?", answers:[
         // I C R S A
-        {text:"Is there a way we can resolve this with words instead of weapons?", modifiers:[0,-1,0,0,2]},
+        {text:"How can we resolve this with words instead of weapons?", modifiers:[0,-1,0,1,2]},
         {text:"What's the most amount of damage I can possibly deal in one turn?", modifiers:[0,2,1,0,0]},
         {text:"Can't wait to loot the bodies!", modifiers:[2,0,0,0,0]},
         {text:"How will the aftermath of this battle affect my character's story?", modifiers:[0,0,0,2,0]},
@@ -108,7 +107,7 @@ var questions = [
         // I C R S A
         {text:"The library.", modifiers:[0,0,1,2,0]},
         {text:"The tavern.", modifiers:[1,0,0,0,1]},
-        {text:"The magic shop.", modifiers:[0,1,2,0,0]},
+        {text:"The magic shop.", modifiers:[0,1,2,1,0]},
         {text:"The smithy.", modifiers:[0,2,0,0,0]},
     ]},
     {name:"How often do you prefer combat sessions to roleplay-only sessions?", answers:[
